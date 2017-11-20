@@ -28,9 +28,16 @@ describe("Words", function(){
 	})
 
 	describe("handle excess white space", function (){
-		it("should return for input of { one: 2, there: 1, was: 2 }'one there was was   one'", function(){
+		it("should return for input of { one: 2, there: 1, was: 2 } for an input of 'one there was was   one'", function(){
 			assert.notStrictEqual(myApp.words("one there was was   one"), { one: 2, there: 1, was: 2 });
 		});
 	})
+
+	describe("handle empty string", function (){
+		it("should return for input of 'please input a string' for an input of ''", function(){
+			assert.equal(myApp.words(""), 'please input a string');
+		});
+	})
+
 })
 
