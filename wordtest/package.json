@@ -1,0 +1,21 @@
+{
+  "name": "wordtest",
+  "version": "1.0.0",
+  "description": "a word occurence test",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "TDD"
+  ],
+  "author": "obi walker",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
