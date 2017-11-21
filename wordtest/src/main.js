@@ -1,8 +1,7 @@
 'use strict';
 
-module.exports = {
 
-words : (arg) => {
+ const words = (arg) =>{
 
   if(typeof arg === 'string' && arg !== 'null' && arg!="" ){
     arg = arg.toLowerCase();
@@ -13,8 +12,7 @@ words : (arg) => {
          
         if (!(key in obj)){
            var value = 0;
-           obj[key]=value+1;
-          
+           obj[key]=value+1; 
         }else{
           obj[key]=parseInt(obj[key])+1;
         }
@@ -26,4 +24,4 @@ words : (arg) => {
       return 'please input a string';
     }
  }
-}
+export default words;
